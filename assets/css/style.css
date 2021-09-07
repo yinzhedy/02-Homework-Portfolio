@@ -13,12 +13,17 @@ body {
 }
 
 .item1 { grid-area: header; }
-
-.item2 { grid-area: menu; }
-
-.item3 { grid-area: main; }
-
-.item4 { grid-area: footer; }
+.item2 {grid-area: menu;
+        border-right: solid grey;
+}
+.item3 { grid-area: contact; 
+        margin-bottom: 15%;
+        border-right: solid grey;
+}
+.item4 { grid-area: main; }
+.item5 { grid-area: footer;
+        margin-top:3.5%;
+}
 
 
 .grid-container {
@@ -26,7 +31,7 @@ body {
     grid-template-areas:
         'header header header header header header'
         'menu main main main main main'
-        'menu footer footer footer footer footer';
+        'contact footer footer footer footer footer';
     grid-gap: 10px;
     padding: 10px;
 }
@@ -57,6 +62,7 @@ body {
     grid-gap: 5px;
     padding: 5px;
 }
+
 .grid-container-inner > figure {
     background-color: white;
     text-align: left;
@@ -93,11 +99,6 @@ header {
     color: var(--font-color);
 }
 
-.item2 > :last-child {
-    position: absolute;
-    bottom: -165px;
-}
-
 .project1,
 .project2,
 .project3,
@@ -111,7 +112,7 @@ header {
 }
 
 .project1 {
-    background-image: url("/assets/images/horiseon.png");
+    background-image: url("../images/horiseon.png");
     height: 400px;
 }
 
@@ -132,6 +133,5 @@ figcaption {
 a {
     text-align: center;
     margin: 5%;
-    margin-bottom: 15%;
-    
+    margin-bottom: 15%;   
 }
