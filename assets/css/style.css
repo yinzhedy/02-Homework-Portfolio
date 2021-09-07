@@ -1,0 +1,137 @@
+:root {
+    --background-color: beige;
+    --border-color: coral;
+    --font-color: grey;
+    --headings-color: black;
+    --highlight-color: coral;
+    --header-background: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color)
+}
+
+.item1 { grid-area: header; }
+
+.item2 { grid-area: menu; }
+
+.item3 { grid-area: main; }
+
+.item4 { grid-area: footer; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > section,
+.grid-container > main {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20 px;
+}
+
+.project1 { grid-area: project1 ; }
+
+.project2 { grid-area: project2 ; }
+
+.project3 { grid-area: project3 ; }
+
+.project4 { grid-area: project4 ; }
+
+.project5 { grid-area: project5; }
+
+.grid-container-inner {
+    display: grid;
+    grid-template-areas:
+        'project1 project1 project1 project1'
+        'project2 project2 project3 project3'
+        'project4 project4 project5 project5';
+    grid-gap: 5px;
+    padding: 5px;
+}
+.grid-container-inner > figure {
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header {
+    position: static;
+    margin-top: 0;
+    background-color: var(--header-background);
+}
+#topnavbar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0px;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.banner {
+    background-image: url("/assets/images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -20%;
+    height: 300px;
+    max-width: 250%;
+}
+#bannercaption {
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+.item2 > :last-child {
+    position: absolute;
+    bottom: -165px;
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5 {
+    background-image: url("/assets/images/comingsoon.png");
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: fill;
+    border: grey solid 4px;
+}
+
+.project1 {
+    background-image: url("/assets/images/horiseon.png");
+    height: 400px;
+}
+
+figcaption {
+    position: relative;
+    left: -3.52%;
+    bottom: -72%;
+    background-color: white;
+    border: white solid 2px;
+    border-radius: 2%;
+    width: 80px;
+}
+
+.project1 figcaption {
+    left: -1.5%;
+}
+
+a {
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 15%;
+    
+}
