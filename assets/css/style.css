@@ -87,7 +87,7 @@ header {
 }
 
 .banner {
-    background-image: url("/assets/images/banner.png");
+    background-image: url("../images/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: -20%;
@@ -104,7 +104,7 @@ header {
 .project3,
 .project4,
 .project5 {
-    background-image: url("/assets/images/comingsoon.png");
+    background-image: url("../images/comingsoon.png");
     height: 120px;
     background-repeat: no-repeat;
     background-size: fill;
